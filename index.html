@@ -1,33 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue Test</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Vue Jobs</title>
   </head>
   <body>
-    <div id="app">
-      <h1>{{message}}</h1>
-      <button @click="clickMe">Click me</button>
-    </div>
-
-    <script>
-      const app = Vue.createApp({
-        data() {
-          return {
-            message: "Hello from Vue!",
-          };
-        },
-        methods: {
-          clickMe() {
-            console.log("Button clicked!");
-            this.message = "Updated Message";
-          },
-        },
-      });
-
-      app.mount("#app");
-    </script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
